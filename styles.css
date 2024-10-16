@@ -230,10 +230,9 @@ section#collection {
 .art-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .art-item .img {
-    object-fit: cover;
     height: 180px;
     border-radius: 15px 15px 15px 15px;
     overflow: hidden;
@@ -243,10 +242,10 @@ section#collection {
     position: absolute;
     top: -2px;
     left: 50%;
+    transform: translateX(-50%);
     font-size: 1em;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transform: translateX(-50%);
     background-color: #9CD4EE;
     color: white;
     padding: 0px 0px 2px 0px;
