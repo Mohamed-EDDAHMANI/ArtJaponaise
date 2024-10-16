@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    color: #195362;
+    height: 100vh;
+    background: url(images/blue-gd.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+}
+
+nav {
+    backdrop-filter: blur(5px);
+    background-color: rgba(240, 248, 255, 0.162);
+    padding: 6px 0px;
+    position: absolute;
+    width: 90%;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 40px;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #0288D1; /* sea blue */
+}
+
+
+.brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    transform: translateX(250%);
+}
+
+.burg{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(-150%);
+    display: none;
+}
+.burg .childs{
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+body .titelSection{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    z-index: -1;
+}
+body .titelSection h1{
+    position: absolute;
+    background-image: url(images/bg-text-contact.png);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+    filter: brightness(1.2);
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50% );
+    font-size: 6em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.textsection{
+    display: flex;
+    height: 60%;
+}
+.textsection .container{
+    padding: 0px 90px;
+}
+.textsection .container h2{
+    color: azure;
+    font-size: 2em;
+    padding: 10px 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.textsection .container p{
+    color: azure;
+    font-size: 1.6em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
